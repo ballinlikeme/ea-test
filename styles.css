@@ -15,7 +15,6 @@
 
 body {
      font-family: "Poppins", sans-serif;
-     scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -29,26 +28,6 @@ body {
      max-width: auto;
      margin: 0 auto;
 }
-
-/* .loader {
-     border: 16px solid #f3f3f3;
-     border-top: 16px solid var(--accent-color);
-     border-radius: 50%;
-     width: 120px;
-     height: 120px;
-     animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-     0% {
-          transform: rotate(0deg);
-     }
-
-     100% {
-          transform: rotate(360deg);
-     }
-} */
-
 
 .decorator {
      position: absolute;
@@ -422,5 +401,43 @@ body {
 
      .mobile-decor {
           display: block;
+     }
+}
+
+.loader {
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     width: 100%;
+     height: 100%;
+
+     background-color: #fff;
+
+     display: none;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader.active {
+     display: flex;
+}
+
+.loader div {
+     border: 16px solid #f3f3f3;
+     border-top: 16px solid var(--accent-color);
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     100% {
+          transform: rotate(360deg);
      }
 }

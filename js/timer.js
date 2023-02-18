@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+     const loader = document.getElementById('loader')
+
      const daysField = document.getElementById('days')
      const hoursField = document.getElementById('hours')
      const minutesField = document.getElementById('minutes')
@@ -62,4 +64,6 @@ window.addEventListener("DOMContentLoaded", () => {
           minutesField.textContent = minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft
           secondsField.textContent = secondsLeft < 10 ? `0${secondsLeft}` : secondsLeft
      }, 1000)
+
+     loader.classList.remove('active')
 })
