@@ -15,6 +15,7 @@
 
 body {
      font-family: "Poppins", sans-serif;
+     scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -389,6 +390,10 @@ body {
           font-size: 14px;
           padding: 10px 40px 10px 10px;
      }
+
+     .header {
+          margin-top: 98px;
+     }
 }
 
 @media (max-width: 360px) {
@@ -402,6 +407,10 @@ body {
 
      .footer__wrapper {
           width: 280px;
+     }
+
+     .header {
+          margin-top: 80px;
      }
 
 }

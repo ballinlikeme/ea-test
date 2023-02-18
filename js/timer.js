@@ -16,9 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
                hoursLabel.textContent = "HH"
                minutesLabel.textContent = "MM"
                secondsLabel.textContent = "SS"
-               console.log('123')
           } else {
-               console.log('123')
                daysLabel.textContent = "Days"
                hoursLabel.textContent = "Hours"
                minutesLabel.textContent = "Minutes"
