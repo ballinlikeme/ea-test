@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./styles.css">
+     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+     <title>Lead Advisor</title>
+</head>
+<body>
+     <div class="wrapper">
+          <div class="decorator decorator-left">
+               <img class="desktop-decor" src="./images/decorators/decorator-left.svg" alt="left decor">
+               <img class="tablet-decor" src="./images/decorators/decorator-left-tablet.svg" alt="left decor">
+               <img class="mobile-decor" src="./images/decorators/decorator-left-mobile.svg" alt="left decor">
+          </div>
+          <div class="decorator decorator-right">
+               <img class="desktop-decor" src="./images/decorators/decorator-right.svg" alt="right decor">
+               <img class="tablet-decor" src="./images/decorators/decorator-right-tablet.svg" alt="right decor">
+               <img class="mobile-decor" src="./images/decorators/decorator-right-mobile.svg" alt="right decor">
+          </div>
+          <header class="header">
+               <a href="index.html">
+                    <div class="header__container">
+                         <img class="header__image" src="./images/logo.svg" alt="Company Logo">
+                    </div>
+               </a>
+          </header>
+          <main class="page">
+               <div class="page__container">
+                    <h1 class="page__title">Under Construction</h1>
+                    <p class="page__subtitle">We're making lots of improvements and will be <br> back soon</p>
+                    <div class="page__countdown countdown">
+                         <div class="countdown__body">
+                              <div class="countdown__item" id="days">92</div>
+                              <div class="countdown__item">:</div>
+                              <div class="countdown__item" id="hours">11</div>
+                              <div class="countdown__item">:</div>
+                              <div class="countdown__item" id="minutes">41</div>
+                              <div class="countdown__item">:</div>
+                              <div class="countdown__item" id="seconds">48</div>
+                         </div>
+                         <div class="countdown__labels">
+                              <div class="countdown__label">
+                                   <img src="./images/bg.svg" alt="background">
+                                   <!-- Days -->
+                                   DD
+                              </div>
+                              <div class="countdown__label">
+                                   <img src="./images/bg.svg" alt="background">
+                                   <!-- Hours -->
+                                   HH
+                              </div>
+                              <div class="countdown__label">
+                                   <img src="./images/bg.svg" alt="background">
+                                   <!-- Minutes -->
+                                   MM
+                              </div>
+                              <div class="countdown__label">
+                                   <img src="./images/bg.svg" alt="background">
+                                   <!-- Seconds -->
+                                   SS
+                              </div>
+                         </div>
+                    </div>
+                    <div class="page__controls controls">
+                         <div class="controls__title">Check our event page when you wait:</div>
+                         <a class="controls__btn" href="https://www.google.com" target="_blank">
+                              <div>Go to the event</div>
+                              <img src="./images/arrow.svg" alt="arrow">
+                         </a>
+                    </div>
+               </div>
+          </main>
+          <footer class="footer">
+               <div class="footer__wrapper">
+                    <input 
+                         class="footer__input" 
+                         type="email"
+                         placeholder="Enter your Email and get notified"
+                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                         id="email"
+                    >
+                    <button class="footer__btn" id="submit">
+                         <img src="./images/arrow.svg" alt="arrow">
+                    </button>
+               </div>
+          </footer>
+          <div class="modal" id="modal">
+               <div class="modal__body">
+                    <div class="modal__header">
+                         <img class="close-modal" src="./images/cancel.svg" alt="cancel">
+                    </div>
+                    <div class="modal__content">
+                         <h2 class="modal__title">SUCCESS!</h2>
+                         <p class="modal__text">You have successfully subscribed to the email newsletter</p>
+                         <button class="controls__btn modal__btn close-modal">Close</button>
+                    </div>
+               </div>
+          </div>
+          <div class="modal" id="modal-error">
+               <div class="modal__body">
+                    <div class="modal__header">
+                         <img class="close-modal" src="./images/cancel.svg" alt="cancel">
+                    </div>
+                    <div class="modal__content">
+                         <h2 class="modal__title">Error</h2>
+                         <p class="modal__text" id="err-modal-text"></p>
+                         <button class="controls__btn modal__btn close-modal">Close</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script type="module" src="./js/subscription.js"></script>
+     <script src="./js/timer.js"></script>
+</body>
+</html>
