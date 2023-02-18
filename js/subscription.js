@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
      const errModalText = document.getElementById('err-modal-text')
 
      const closeBtns = [...document.getElementsByClassName('close-modal')]
-     console.log(closeBtns)
 
      const closeModal = () => {
           modal.classList.remove('active')

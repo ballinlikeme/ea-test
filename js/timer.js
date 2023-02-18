@@ -5,6 +5,27 @@ window.addEventListener("DOMContentLoaded", () => {
      const minutesField = document.getElementById('minutes')
      const secondsField = document.getElementById('seconds')
 
+     const daysLabel = document.getElementById('days-label')
+     const hoursLabel = document.getElementById('hours-label')
+     const minutesLabel = document.getElementById('minutes-label')
+     const secondsLabel = document.getElementById('seconds-label')
+
+     window.onresize = () => {
+          if (window.innerWidth <= 768) {
+               daysLabel.textContent = "DD"
+               hoursLabel.textContent = "HH"
+               minutesLabel.textContent = "MM"
+               secondsLabel.textContent = "SS"
+               console.log('123')
+          } else {
+               console.log('123')
+               daysLabel.textContent = "Days"
+               hoursLabel.textContent = "Hours"
+               minutesLabel.textContent = "Minutes"
+               secondsLabel.textContent = "Seconds"
+          }
+     }
+
      const endDate = {
           year: "2023",
           month: "05",
